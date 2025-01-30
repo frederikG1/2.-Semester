@@ -1,0 +1,5 @@
+{
+    "dotnet.defaultSolution": "WebApplication1.sln",
+    "csharp.preview.improvedLaunchExperience": true
+    
+}

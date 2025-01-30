@@ -1,0 +1,23 @@
+@page
+@model WebApplication1.Pages.UserStoriesModel
+@{
+    ViewData["Title"] = "UserStories";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<div>
+    <h1>
+        Users Stories 
+    </h1>
+    <ul>
+        @foreach (var userStory in @Model.UserStoriesList)
+        {
+            <li>
+                <div>@userStory.Id</div>
+                <div>@userStory.Title</div>
+                <div>@userStory.Description</div>
+            </li>
+        }
+    </ul>
+</div>
