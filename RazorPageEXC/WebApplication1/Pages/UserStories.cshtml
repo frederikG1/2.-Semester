@@ -4,20 +4,22 @@
     ViewData["Title"] = "UserStories";
 }
 
-<h1>@ViewData["Title"]</h1>
 
 <div>
-    <h1>
-        Users Stories 
-    </h1>
     <ul>
         @foreach (var userStory in @Model.UserStoriesList)
-        {
-            <li>
-                <div>@userStory.Id</div>
-                <div>@userStory.Title</div>
-                <div>@userStory.Description</div>
-            </li>
-        }
-    </ul>
+{           
+    <div class="card mb-2" style="width: 30rem;">
+        <div class="card-header p-2">
+            <h5 class="card-title">(@userStory.Id) @userStory.Title</h5>
+        </div>
+    <div class="card-body">
+        <p class="card-text">@userStory.Description</p>
+    </div>
+    <div class="card-footer">
+        <a class="btn" type="button" asp-page="DeleteUserStory" asp-route-id="@userStory.Id"><i class="fa fa-trash"></i></a>
+        <a class="btn" type="button" asp-page="UserStoryDetail" asp-route-id="@userStory.Id"><i class="fa fa-info-circle"></i></a>
+    </div>
 </div>
+
+}

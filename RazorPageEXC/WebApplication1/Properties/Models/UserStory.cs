@@ -12,11 +12,20 @@ namespace WebApplication1.Properties.Models
         public string Title { get; set; }
         public string Description { get; set; }
 
-        public UserStory(string title, string description)
+        public int BusinessValue { get; set; }
+        public DateTime CreationDate { get; set; }
+        public int Priority { get; set; }
+        public string StoryPoints { get; set; }
+
+        public UserStory(string title, string description, int businessValue, DateTime creationDate, int priority, string storyPoints)
         {
             Id = nextId++;
             Title = title;
             Description = description;
+            BusinessValue = businessValue;
+            CreationDate = creationDate;
+            Priority = priority;
+            StoryPoints = storyPoints;
         }
 
         public UserStory()

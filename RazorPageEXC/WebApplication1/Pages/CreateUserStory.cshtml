@@ -1,0 +1,52 @@
+@page
+@Html.CheckBox("AreChecked")
+@model WebApplication1.Pages.CreateUserStoryModel
+@{
+    ViewData["Title"] = "CreateUserStory";
+}
+
+<div>
+    <h1>Create User Story</h1>
+    <form method="post">
+        <div class="form-group">
+            <label asp-for="UserStory.Title"></label>
+            <input asp-for="UserStory.Title" class="form-control" />
+            <span asp-validation-for="UserStory.Title" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="UserStory.Description" class="custom-control-label"></label><br />
+            <textarea asp-for="UserStory.Description" class="form-control" cols="120" rows="4"></textarea>
+            <span asp-validation-for="UserStory.Description" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="UserStory.BusinessValue" class="custom-control-label"></label><br />
+            <input asp-for="UserStory.BusinessValue" class="form-control" />
+            @foreach (var b in Model.RadioValues)
+            {
+                <input name="AreChecked" type="checkbox" value="@b" /> @b<br />
+            }
+            <span asp-validation-for="UserStory.BusinessValue" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="UserStory.CreationDate" class="custom-control-label"></label><br />
+            <input asp-for="UserStory.CreationDate" class="form-control" />
+            <span asp-validation-for="UserStory.CreationDate" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="UserStory.Priority" class="custom-control-label"></label><br />
+            <input asp-for="UserStory.Priority" class="form-control" />
+            @foreach (var p in Model.PriorityValues)
+            {
+                <input name="radio" asp-for="Prioritet" value="@p" /> @p<br />
+            }
+            <span asp-validation-for="UserStory.Priority" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="UserStory.StoryPoints" class="custom-control-label"></label><br />
+            <input asp-for="UserStory.StoryPoints" class="form-control" />
+            <span asp-validation-for="UserStory.StoryPoints" class="text-danger"></span>
+        </div>
+        <button type="submit" class="btn btn-primary">Create</button>
+    </form>
+</div>
+

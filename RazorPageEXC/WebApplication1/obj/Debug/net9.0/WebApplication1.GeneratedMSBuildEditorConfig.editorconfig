@@ -20,6 +20,14 @@ build_property._RazorSourceGeneratorDebug =
 build_property.EffectiveAnalysisLevelStyle = 9.0
 build_property.EnableCodeStyleSeverity = 
 
+[C:/Users/frede/OneDrive/Dokumenter/GitHub/2.-Semester/RazorPageEXC/WebApplication1/Pages/CreateUserStory.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ3JlYXRlVXNlclN0b3J5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/frede/OneDrive/Dokumenter/GitHub/2.-Semester/RazorPageEXC/WebApplication1/Pages/DeleteUserStory.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGVsZXRlVXNlclN0b3J5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/frede/OneDrive/Dokumenter/GitHub/2.-Semester/RazorPageEXC/WebApplication1/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -38,6 +46,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/frede/OneDrive/Dokumenter/GitHub/2.-Semester/RazorPageEXC/WebApplication1/Pages/UserStories.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlclN0b3JpZXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/frede/OneDrive/Dokumenter/GitHub/2.-Semester/RazorPageEXC/WebApplication1/Pages/UserStoryDetail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlclN0b3J5RGV0YWlsLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/frede/OneDrive/Dokumenter/GitHub/2.-Semester/RazorPageEXC/WebApplication1/Pages/_ViewImports.cshtml]

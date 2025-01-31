@@ -10,19 +10,18 @@ namespace WebApplication1.Pages
 {
     public class UserStoriesModel : PageModel
     {
-        private readonly UserStoryService _userStoryService;
-        private readonly ILogger<UserStoriesModel> _logger;
+        private UserStoryService userStoryService;
+        
         public List<UserStory> UserStoriesList { get; private set; }
 
-        public UserStoriesModel(UserStoryService userStoryService, ILogger<UserStoriesModel> logger)
+        public UserStoriesModel(UserStoryService userStoryService)
         {
-            _userStoryService = userStoryService;
-            _logger = logger;
+            this.userStoryService = userStoryService;
         }
 
         public void OnGet()
         {
-            UserStoriesList = _userStoryService.GetUserStories();
+            UserStoriesList = userStoryService.GetUserStories();
         }
     }
 }
