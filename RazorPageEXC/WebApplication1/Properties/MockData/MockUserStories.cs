@@ -20,6 +20,11 @@ namespace WebApplication1.Properties.MockData
         {
             return userStories;
         }
+
+        public MockUserStories()
+        {
+            
+        }
     
     }
 }
