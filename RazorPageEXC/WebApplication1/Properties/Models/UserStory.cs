@@ -23,7 +23,7 @@ namespace WebApplication1.Properties.Models
             Title = title;
             Description = description;
             BusinessValue = businessValue;
-            CreationDate = creationDate;
+            CreationDate = DateTime.Today;
             Priority = priority;
             StoryPoints = storyPoints;
         }
